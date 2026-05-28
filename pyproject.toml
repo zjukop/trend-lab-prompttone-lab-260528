@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "prompttone-lab"
+version = "0.1.0"
+description = "Benchmark and auto-repair prompt framing by tone"
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [{ name = "PromptTone Lab" }]
+dependencies = []
+
+[project.scripts]
+prompttone-lab = "prompttone_lab.main:cli"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
